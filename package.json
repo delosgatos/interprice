@@ -18,7 +18,8 @@
     "sass": "~1.32.13",
     "url-loader": "^4.1.1",
     "vue": "~2.6",
-    "vue-fragment": "1.5.1",
+    "vue-frag": "^1.4.1",
+    "vue-fragment": "^1.5.1",
     "vue-router": "~3.0",
     "vuetify": "^2.6.0"
   },

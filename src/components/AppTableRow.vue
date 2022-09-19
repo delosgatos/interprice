@@ -44,7 +44,7 @@
 
 <script>
 import _ from 'lodash';
-import { Fragment } from 'vue-fragment';
+import { Fragment } from 'vue-frag'
 
 import { customClasses } from '@/helpers/CompleteCustomTableData';
 

@@ -19,9 +19,7 @@
           :active-sort-field="activeSortField"
           @mouseover="(data) => gripMethod(data)"
           @mouseleave="(data) => gripMethod(data)"
-          @headerAlreadyRendered="
-            (bool) => (headerAlreadyRendered = bool)
-          "
+          @headerAlreadyRendered="(bool) => (headerAlreadyRendered = bool)"
           @sort="activeSortFieldMethod"
           @rowCheckbox="(data) => activeCheckboxesUpdateMethod(data)"
         />
@@ -81,8 +79,7 @@
             :key="table.randomKey"
             class="tbody"
           >
-          {{rows}}
-            <!-- <AppTableRow
+            <AppTableRow
               v-for="(row, indexrow) in rows"
               :key="row.id"
               :row-count="indexrow"
@@ -92,7 +89,7 @@
               :columns-key-order="columnsKeyOrder"
               :columns-key-order-type="columnsKeyOrderType"
               :units="units"
-            /> -->
+            />
           </div>
         </div>
       </div>
