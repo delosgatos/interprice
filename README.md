@@ -1,3 +1,5 @@
-# Vue 2 application with webpack 4 boilerplate
+# Developer test for Interprice
 
-This repo is a support for [this article](https://medium.com/js-dojo/how-to-configure-webpack-4-with-vuejs-a-complete-guide-209e943c4772) published on Medium
+This repo is solving the task https://gitlab.com/interprice/developer-test/
+
+I'm using Vue 2, Vuetify, Webpack 4.
