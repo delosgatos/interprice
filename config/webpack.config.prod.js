@@ -67,7 +67,10 @@ const webpackConfig = merge(commonConfig, {
             threshold: 10240,
             minRatio: 0.8
         }),
-        new webpack.HashedModuleIdsPlugin()
+        new webpack.HashedModuleIdsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(environment)
+          })
     ]
 });
 

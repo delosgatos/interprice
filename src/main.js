@@ -3,10 +3,6 @@ import VueRouter from 'vue-router';
 import App from '@/App';
 import routes from '@/routes';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
-
 import vuetify from '@/plugins/vuetify';
 
 import moment from 'moment';
@@ -16,8 +12,6 @@ Vue.filter('shortWordDate', function(value) {
   }
 });
 
-library.add(faUserSecret);
-Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
