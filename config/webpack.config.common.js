@@ -65,6 +65,10 @@ const webpackConfig = {
     },
     plugins: [
         new VueLoaderPlugin(),
+        new MiniCSSExtractPlugin({
+            filename: 'css/[name].[hash].css',
+            chunkFilename: 'css/[id].[hash].css'
+        }),
         new HtmlPlugin({ template: 'index.html', chunksSortMode: 'dependency' })
     ]
 };
