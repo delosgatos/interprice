@@ -8,7 +8,7 @@
     "serve": "cross-env NODE_ENV=production browserify -g envify -e main.js | uglifyjs -c -m > build.js",
     "clean": "rimraf dist",
     "build": "npm run clean && webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --host=0.0.0.0 --disable-host-check --useLocalIp --progress",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
     "staging": "cross-env NODE_ENV=staging webpack"
   },
   "dependencies": {
