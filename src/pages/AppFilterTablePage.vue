@@ -28,8 +28,8 @@
         background-color="#fff"
         ref="YearsControl"
       >
-    <v-btn v-for="(d,i) in filters.Years" :key="d+'-'+filters.Currency[activeFilters.Currency].id">
-          {{ d }} {{ i }} YRS
+    <v-btn v-for="d in filters.Years" :key="d+'-'+filters.Currency[activeFilters.Currency].id">
+          {{ d }} YRS
         </v-btn>
       </v-btn-toggle>
       <v-btn-toggle
